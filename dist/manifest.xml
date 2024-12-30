@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0" xsi:type="MailApp">
   <Id>aec8c261-f0b6-49c3-abc2-02eef1b129f9</Id>
-  <Version>1.0.3.0</Version>
+  <Version>1.0.4.0</Version>
   <ProviderName>Contoso</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Digitales Postfach"/>
   <Description DefaultValue="A template to get started."/>
-  <IconUrl DefaultValue="https://www.contoso.com/assets/icon-64.png"/>
-  <HighResolutionIconUrl DefaultValue="https://www.contoso.com/assets/icon-128.png"/>
+  <IconUrl DefaultValue="https://gasdev628.github.io/Digitales-Postfach/assets/icon-64.png"/>
+  <HighResolutionIconUrl DefaultValue="https://gasdev628.github.io/Digitales-Postfach/assets/icon-128.png"/>
   <SupportUrl DefaultValue="https://www.contoso.com/help"/>
   <AppDomains>
     <AppDomain>https://www.contoso.com</AppDomain>
@@ -23,7 +23,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://www.contoso.com/taskpane.html"/>
+        <SourceLocation DefaultValue="https://gasdev628.github.io/Digitales-Postfach/taskpane.html"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
@@ -85,13 +85,13 @@
       </Hosts>
       <Resources>
         <bt:Images>
-          <bt:Image id="Icon.16x16" DefaultValue="https://www.contoso.com/assets/icon-16.png"/>
-          <bt:Image id="Icon.32x32" DefaultValue="https://www.contoso.com/assets/icon-32.png"/>
-          <bt:Image id="Icon.80x80" DefaultValue="https://www.contoso.com/assets/icon-80.png"/>
+          <bt:Image id="Icon.16x16" DefaultValue="https://gasdev628.github.io/Digitales-Postfach/assets/icon-16.png"/>
+          <bt:Image id="Icon.32x32" DefaultValue="https://gasdev628.github.io/Digitales-Postfach/assets/icon-32.png"/>
+          <bt:Image id="Icon.80x80" DefaultValue="https://gasdev628.github.io/Digitales-Postfach/assets/icon-80.png"/>
         </bt:Images>
         <bt:Urls>
-          <bt:Url id="Commands.Url" DefaultValue="https://www.contoso.com/commands.html"/>
-          <bt:Url id="Taskpane.Url" DefaultValue="https://www.contoso.com/taskpane.html"/>
+          <bt:Url id="Commands.Url" DefaultValue="https://gasdev628.github.io/Digitales-Postfach/commands.html"/>
+          <bt:Url id="Taskpane.Url" DefaultValue="https://gasdev628.github.io/Digitales-Postfach/taskpane.html"/>
         </bt:Urls>
         <bt:ShortStrings>
           <bt:String id="GroupLabel" DefaultValue="Contoso Add-in"/>
