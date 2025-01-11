@@ -6,7 +6,7 @@
   xsi:type="MailApp">
 
   <Id>aec8c261-f0b6-49c3-abc2-02eef1b129f9</Id>
-  <Version>3.1.108.0</Version>
+  <Version>3.1.109.0</Version>
   <ProviderName>Digitales Postfach</ProviderName>
   <DefaultLocale>de-DE</DefaultLocale>
   <DisplayName DefaultValue="Digitales Postfach"/>
@@ -37,6 +37,13 @@
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
+
+    <!-- <Form xsi:type="ItemRead">
+      <DesktopSettings>
+        <SourceLocation DefaultValue="https://localhost:3000/answer_form.html"/>
+        <RequestedHeight>250</RequestedHeight>
+      </DesktopSettings>
+    </Form>     -->
   </FormSettings>
 
   <Permissions>ReadWriteItem</Permissions>
@@ -81,6 +88,25 @@
                     </Action>
                   </Control>
 
+                  <!-- <Control xsi:type="Button" id="btnMagik2">
+                    <Label resid="MagikBtnLabel"/>
+                    <Supertip>
+                      <Title resid="MagikBtnLabel"/>
+                      <Description resid="MagikBtnDescr"/>
+                    </Supertip>
+                    <Icon>
+                      <bt:Image size="16" resid="icon_magik_16"/>
+                      <bt:Image size="32" resid="icon_magik_32"/>
+                      <bt:Image size="80" resid="icon_magik_80"/>
+                    </Icon>
+                    <Action xsi:type="ExecuteFunction">
+                      <FunctionName>action</FunctionName>
+                    </Action>
+                    <Action xsi:type="ShowTaskpane">
+                      <SourceLocation resid="Taskpane2.Url"/>
+                    </Action>
+                  </Control> -->
+
                 </Group>
               </OfficeTab>
             </ExtensionPoint>
@@ -99,6 +125,7 @@
         <bt:Urls>
           <bt:Url id="Commands.Url" DefaultValue="https://localhost:3000/commands.html"/>
           <bt:Url id="Taskpane.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+          <!-- <bt:Url id="Taskpane2.Url" DefaultValue="https://localhost:3000/answer_form.html"/> -->
         </bt:Urls>
 
         <bt:ShortStrings>

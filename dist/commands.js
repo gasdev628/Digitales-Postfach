@@ -1,2 +1,2 @@
-Office.onReady((function(){}));
+Office.onReady((function(){})),Office.actions.associate("action",(function(e){Office.context.ui.displayDialogAsync("https://localhost:3000/answer_form.html",{height:50,width:50,displayInIframe:!1},(function(e){e.status===Office.AsyncResultStatus.Failed?console.error(e.error.message):e.value})),e.completed()}));
 //# sourceMappingURL=commands.js.map

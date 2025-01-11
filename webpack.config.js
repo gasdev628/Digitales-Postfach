@@ -21,13 +21,14 @@ module.exports = async (env, options) => {
       polyfill: ["core-js/stable", "regenerator-runtime/runtime"],
       vendor: ["react", "react-dom", "core-js", "@fluentui/react-components", "@fluentui/react-icons"],
       taskpane: ["./src/taskpane/index.tsx", "./src/taskpane/taskpane.html"],
+      answer_form: ["./src/answer_form/index.tsx", "./src/answer_form/answer_form.html"],
       commands: "./src/commands/commands.ts",
     },
     output: {
       clean: true,
     },
     resolve: {
-      extensions: [".ts", ".tsx", ".html", ".js"],
+      extensions: [".ts", ".tsx", ".html", ".js", ".css"],
     },
     module: {
       rules: [
@@ -62,6 +63,11 @@ module.exports = async (env, options) => {
         filename: "taskpane.html",
         template: "./src/taskpane/taskpane.html",
         chunks: ["polyfill", "vendor", "taskpane"],
+      }),
+      new HtmlWebpackPlugin({
+        filename: "answer_form.html",
+        template: "./src/answer_form/answer_form.html",
+        chunks: ["polyfill", "vendor", "answer_form"],
       }),
       new CopyWebpackPlugin({
         patterns: [

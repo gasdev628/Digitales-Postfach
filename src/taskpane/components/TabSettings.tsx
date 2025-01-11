@@ -17,6 +17,7 @@ const useStyles = makeStyles({
     display: "flex",
   },
   dialog_field: {
+    fontWeight: 600,
     marginBottom: "15px",
   },
   dialog_add: {

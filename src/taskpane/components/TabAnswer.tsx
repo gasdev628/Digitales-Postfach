@@ -1,8 +1,9 @@
 import * as React from "react";
-import { Button, Dialog, DialogSurface, Field, Spinner, Textarea, makeStyles } from "@fluentui/react-components";
+import { Button, Dialog, DialogSurface, Field, InfoLabel, Label, LabelProps, Spinner, Textarea, makeStyles } from "@fluentui/react-components";
 import DialogForm from "./DialogForm";
 import { DialogInfo, FieldInfo, sendRequest } from "../../../helpers";
 import { getMailDetails, insertText } from "../taskpane";
+import { Pencil } from "lucide-react";
 
 /* global console, HTMLTextAreaElement, localStorage */
 
@@ -18,6 +19,7 @@ const useStyles = makeStyles({
     display: "flex",
   },
   dialog_field: {
+    fontWeight: 600,
     marginBottom: "15px",
   },
   button_send: {
@@ -26,6 +28,10 @@ const useStyles = makeStyles({
   },
   spinner: {
     width: "75%",
+  },
+  pencil: {
+    marginLeft: "2px",
+    marginRight: "4px",
   },
 });
 
@@ -162,15 +168,19 @@ const TabAnswer = () => {
       <div className={styles.answer_dialog}>
         <Field
           className={styles.dialog_field}
-          label="Kurze Antwort"
+          label={
+            <>
+              <Pencil size={18} className={styles.pencil} /> Nutzer Input
+            </>
+          }
           validationState={answerValue.state}
-          validationMessage="Schreiben Sie eine kurze Antwort"
+          validationMessage="Kurze Antwort eingeben"
           required
         >
           <Textarea
             value={answerValue.current}
             rows={10}
-            placeholder="type here..."
+            placeholder="Kurzen Text eingeben.."
             size="large"
             resize="vertical"
             onChange={handleChangeValue}
@@ -178,7 +188,7 @@ const TabAnswer = () => {
         </Field>
 
         <Button className={styles.button_send} appearance="primary" onClick={onButtonSaveClick}>
-          Erhalten vollständige Antwort
+          Antwort generieren
         </Button>
       </div>
     </div>
